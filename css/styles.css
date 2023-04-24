@@ -1,0 +1,47 @@
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-areas:
+        "a a a"
+        "b c d"
+        "b e f"
+        "g h f"
+    ;
+    grid-gap: 0.18em;
+}
+
+.celda {
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.celda1 {
+    grid-column: 1 / span 3;
+    background-color: greenyellow;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.celda2 {
+    grid-area: b;
+    justify-content: left;
+    background-color: aqua;
+}
+
+.celda6 {
+    grid-row: 1 / span 2;
+    grid-area: f;
+    justify-content: right;
+    align-items: end;
+    background-color: rgb(237, 150, 207);
+}
+
+.roja {
+    color: red;
+
+}
